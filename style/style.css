@@ -632,6 +632,7 @@ li a i{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow-x:hidden;
     }
     .header-sec-2 img{
         margin: 0;
