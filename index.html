@@ -16,16 +16,18 @@
     <title>Home- Robo Tech Valley</title>
 </head>
 <body>
+    <i id="home"></i>
     <div class="nav_bar">
         <img id="logo" src="./Images/logo.png" alt="Main Logo">
         <div class="menus">
-            <li><a class="active-bar" href="/">Home</a></li>
+            <li><a class="active-bar" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
             <li><a href="#ambassador">B Ambassador</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li class="store"><a href="http://store.robotechvalley.com">Store</a></li>
+            <li class="store"><a target="_blank" href="http://store.robotechvalley.com">Store</a></li>
         </div>
     </div>
     <div class="Mobile_nav_bar">
@@ -33,11 +35,14 @@
         <div class="menu_bar">
             <i class="fas fa-bars" id="menuBar"></i>
             <div class="Mobile_menus" id="MMneu">
-                <li><a class="active-bar" href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Portfolio</a></li>
-                <li class="store"><a href="/">Store</a></li>
+                <li><a class="active-bar" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#ambassador">B Ambassador</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="store"><a target="_blank" href="http://store.robotechvalley.com">Store</a></li>
             </div>
         </div>
 
@@ -70,7 +75,7 @@
         }
     </script>
     <!-- Header section start -->
-    <section class="header-sec">
+    <section  class="header-sec">
         <div class="header_div header-sec-1">
             <div class="defination_title">
                 <p><span>E-Commerce</span> | <span>Digital Services</span></p>
@@ -102,7 +107,7 @@
 
 <!-- About section start -->
 
-<section class="about_sec">
+<section id="about" class="about_sec">
     <div class="about_div">
         <div class="about_details">
             <h2>About</h2>
@@ -143,7 +148,7 @@
         <svg class="svgtwo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L1440,256L1440,320L0,320Z"></path></svg>    
     </section>
 <!-- service section start -->
-    <section class="service_sec">
+    <section id="service" class="service_sec">
         <div class="service_title">
             <h2>Services</h2>
         </div>
@@ -186,7 +191,7 @@
 
     <!-- Team section start -->
 
-    <section class="team_sec">
+    <section id="team" class="team_sec">
         <div class="service_title">
             <h2>Our Team</h2>
         </div>
@@ -323,7 +328,7 @@
 
 
     <!-- Portfolio section start -->
-    <section class="portfolio_sec">
+    <section id="portfolio" class="portfolio_sec">
         <div class="service_title">
             <h2>Portfolio</h2>
         </div>
@@ -371,7 +376,7 @@
 
     <!-- Blog section start -->
 
-    <section class="blog_sec">
+    <section id="blog" class="blog_sec">
         <div class="service_title">
             <h2 class="mb-5 ftg">From The Blog</h2>
         </div>
@@ -524,6 +529,36 @@
         
 
     </script>
+
+    <!-- smooth scrolling effect -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script>
+     $(document).ready(function(){
+       // Add smooth scrolling to all links
+       $("a").on('click', function(event) {
+     
+         // Make sure this.hash has a value before overriding default behavior
+         if (this.hash !== "") {
+           // Prevent default anchor click behavior
+           event.preventDefault();
+     
+           // Store hash
+           var hash = this.hash;
+     
+           // Using jQuery's animate() method to add smooth page scroll
+           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+           $('html, body').animate({
+             scrollTop: $(hash).offset().top
+           }, 800, function(){
+     
+             // Add hash (#) to URL when done scrolling (default click behavior)
+             window.location.hash = hash;
+           });
+         } // End if
+       });
+     });
+     </script> 
 
 
 </body>
