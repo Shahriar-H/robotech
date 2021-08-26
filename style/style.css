@@ -236,6 +236,20 @@ section{
     padding: 5px;
 }
 
+/* <!-- Clients section start --> */
+
+.clients_sec{
+    padding: 100px 200px 100px 200px;
+    background-color: white;
+}
+.owl-carousel div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.owl-carousel div img{
+    max-width: 150px;
+}
 
 
 /* <!-- About section start --> */
@@ -244,7 +258,7 @@ section{
     width: 100%;
     height: 450px;
     background-color: white;
-    padding: 70px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 .about_div{
     background-color: rgb(219, 239, 253);
@@ -309,9 +323,112 @@ section{
     color: white;
 }
 
+/* <!-- Team section start --> */
 
+.team_sec{
+    margin: 0;
+    width: 100%;
+    padding: 40px 100px 40px 100px;
+    position: relative;
+}
+.team{
+    height: 278px;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    display: flex;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+.team_sec::before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: #ebeae9;
+    z-index: 99;
+    bottom: 0px;
+    left: 0;
+}
+.team_member{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 15px;
+}
+.team_member img{
+    max-width: 100%;
+    height: 100%;
+}
+.team_nested{
+    height: 278px;
+}
+.member_info{
+    position: absolute;
+    z-index: 9;
+    bottom: -38px;
+    background-color: rgba(255, 255, 255, 0.753);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(180, 179, 179, 0.486);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.team_member:hover .member_info{
+    bottom: 0px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    background-color: white;
+}
+.member_info h4 {
+    padding:0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.member_info p {
+    padding:0;
+    margin: 0;
+    font-size: 14px;
+}
+.memberS_contact{
+    margin-top: 9px;
+}
+.memberS_contact a{
+    color: grey;
+    padding: 5px;
+}
+.memberS_contact a i{
+    font-size: 24px;
+}
+.memberS_contact a:hover i{
+    color: rgb(0, 162, 255);
+}
+.nebtn{
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    background-color: rgb(0, 140, 255);
+    padding: 10px;
+    z-index: 91;
+    cursor: pointer;
+}
+.pervious{
+    left: 0;
 
-
+}
+.next{
+   float: right;
+   margin-right: 10px;
+}
 
 
 
@@ -606,8 +723,19 @@ li a i{
 
 
 @media only screen and (min-width:200px) and (max-width:991px){
+    .clients_sec{
+        padding: 100px 0px 100px 0px;
+        background-color: white;
+    }
+    
     .nav_bar{
         display: none;
+    }
+    .team_sec {
+        padding: 40px 10px 40px 10px;
+    }
+    .next {
+        margin-right: 0px;
     }
     .Mobile_nav_bar{
         display: flex;
@@ -632,7 +760,7 @@ li a i{
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
     .header-sec-2 img{
         margin: 0;
