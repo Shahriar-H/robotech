@@ -6,6 +6,7 @@
 body{
     overflow-x: hidden;
     background-color: rgb(235, 234, 233);
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -482,6 +483,69 @@ section{
     }
 }
 
+/* <!-- Ambassador section start --> */
+
+.ambassador_sec{
+    padding: 50px 100px;
+    overflow: hidden;
+    background-color: rgb(250, 206, 233);
+}
+.ambassador_div{
+    background-color: white;
+    text-align: center;
+    height: 300px;
+}
+.ambassador_info{
+    padding: 8px;
+}
+.ambassador_info h5{
+    font-weight: bold;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.ambassador_info .amba_institute{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: monospace;
+    font-size: 15px;
+}
+.slider_div_swiper{
+    height: 300px;
+    position: relative;
+    background: #eee;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.swiper {
+    width: 100%;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .ambassador_div img {
+    display: block;
+    width: 300px;
+    height: 170px;
+  }
+  .swiper-pagination{
+    position: relative !important;
+    margin-top: 20px !important;
+  }
+  
+
 
 /* <!-- Blog section start --> */
 
@@ -728,6 +792,9 @@ li a i{
         background-color: white;
     }
     
+    .ambassador_sec {
+        padding: 50px 10px;
+    }
     .nav_bar{
         display: none;
     }
@@ -882,6 +949,9 @@ li a i{
     } 
     .header-sec-1 {
         padding-top: 120px;
+    }
+    .ambassador_info p:nth-child(3){
+        padding:12px
     }
 
 
