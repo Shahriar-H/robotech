@@ -127,7 +127,7 @@ section{
 .header-sec-1{
     padding-top: 0px;
     background-image: url(../Images/bg.png);
-    background-size: 600px 500px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     margin: 50px 0px 0px 50px;
@@ -203,7 +203,6 @@ section{
 /* <!-- loogking_sec section start --> */
 
 .loogking_sec{
-    height: 570px;
     width: 100%;
     padding: 0 !important;
     position: relative;
@@ -213,7 +212,7 @@ section{
     background-attachment: fixed;
 }
 .svgtwo{
- margin-top: -70px;
+ margin-top: -7px;
 }
 .looking_2_div{
     display: flex;
@@ -286,6 +285,9 @@ section{
     background-image: linear-gradient(rgba(255, 255, 255, 0.781),rgba(255, 255, 255, 0.808)), url(../Images/riiing.png);
     background-size: cover;
     padding: 70px 200px 50px 200px;
+    margin-top: -7px;
+    position: sticky;
+    z-index: 9;
 }
 .service_box{
     display: flex;
@@ -556,6 +558,7 @@ section{
 }
 .blog_box{
     display: flex;
+    justify-content: space-between;
 }
 
 .blogs{
@@ -717,7 +720,7 @@ li a i{
     z-index: 9999999;
     background-color: rgb(1, 15, 59);
     width: 100%;
-    left: -800px;
+    left: -1800px;
     top: 80px;
     padding: 30px;
     color: white !important;
@@ -821,6 +824,7 @@ li a i{
         margin: 65px 0px 0px 0px;
         padding-top: 150px;
         height: 500px;
+        background-size:cover;
     }
     .header-sec-2{
         margin: 0;
@@ -850,7 +854,7 @@ li a i{
         height: auto;
     }
     .about_div img{
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 70px;
     }
     .svgone{
